@@ -46,4 +46,4 @@ if __name__ == "__main__":
     lyrics_fetcher.fetch_lyrics()
 
 
-#xport GENIUS_ACCESS_TOKEN="SkRrEqxio_HV06K7d_m28omKserqVoktIqL6z37P91kQQe_fDB4Y6gMWuFLj4a4K" 
+#export GENIUS_ACCESS_TOKEN="SkRrEqxio_HV06K7d_m28omKserqVoktIqL6z37P91kQQe_fDB4Y6gMWuFLj4a4K" 
