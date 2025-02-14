@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Lyrics Search</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        input { padding: 10px; width: 300px; }
+        button { padding: 10px; }
+        .result { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Search for a Post Malone Song</h1>
+    <form action="/search" method="post">
+        <input type="text" name="query" placeholder="Enter lyrics snippet" required>
+        <button type="submit">Search</button>
+    </form>
+    
+    {% if query %}
+        <h2>Results for: "{{ query }}"</h2>
+        <div class="result">
+            {% for title, similarity in results %}
+                <p><strong>{{ title }}</strong> - Similarity: {{ similarity|round(2) }}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+</body>
+</html>

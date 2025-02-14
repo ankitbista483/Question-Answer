@@ -3,4 +3,7 @@ torch
 datasets 
 flask
 lyricsgenius
+sentence-transformers 
+faiss-cpu
+
 -e .
